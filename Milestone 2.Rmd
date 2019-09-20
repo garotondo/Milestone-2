@@ -9,22 +9,8 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+The two projects I decided to look at were Keeley MacAfee's "Food Expenditure and Availability" and Donovan Doyle's "NFL Gambling".
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Keeley's project involved a lot of gathering and cleaning. Keeley did a lot of data gathering and cleaning on two sets of data: food expenditures and food availabilty. To clean the data, she loaded the library(janitor), and called clean_names() when cleaning the food expenditure data. I liked how when cleaning the data, Keeley added new variables with mutate() to downsize the variables (which were in millions of dollars) to dollars per person. She then selected these variables to examine. By using mutate() and select(), she made the data more easy to look at, which I liked. When examining the food availability data, Keeley created a few new columns with selected excel files. She then joined a lot of data using left_join(). Overall, I liked Keeley's project because she used a lot of data from different sources and was able to join it in an organized way to examine current food trends.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Donovan's project was interesting because it investigated how NFL gambling influenced, if at all, the outcome of NFL games. Donovan had to tidy a lot of data to only examine the necessary variables and their relationships. However I like the variables he looked into, I don't quite understand why he said that he could not really use the data under the "spread_favorite" and "schedule_playoff" variables. To be fair, he looked at an extensive list of variables, but I feel like these two variables could have also lended some interesting information about the relationship between game outcomes and gambling on playoff games (games with hgiher stakes). I especially liked how he investigated the data on teams considered "underdogs" and alluded to how this label can actually propel teams to perform better than anticipated as it can inspire a stronger team culture. Overall, I think this was a really interesting topic and Donovan organized the data well. 
